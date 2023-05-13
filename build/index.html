@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- how to work with pictures
+    finish footer 
+    copy the code for the form from the tutorial video
+    finish dark mode
+    finish hamburger btn
+-->
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="">
+    <header class="sticky top-0 z-20  bg-cyan-50 w-full h-16 border-b-2 border-cyan-500">
+        <section id="navbar" class="h-full sm:max-w-4xl sm:mx-auto px-5 flex justify-between items-center overflow-hidden">
+            <a href="#home" class="text-2xl">🛒 My Shoping Website</a>
+            <button id="hamburger-button" class="text-3xl sm:hidden">
+                &#9776;
+            </button>
+            <nav class="hidden sm:block">
+                <ul class="flex gap-12 text-xl">
+                    <li>
+                        <a href="#products" class="text-slate-700 hover:text-slate-400">Products</a>
+                    </li>
+                    <li>
+                        <a href="#message" class="text-slate-700 hover:text-slate-400">Message Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="mobile-menu"
+                class="top-68 justify-content-center absolute  w-full hidden origin-top animate-open-menu flex-col bg-cyan-50 text-5xl">
+                <button class="text-red-600 text-7xl self-end px-6">
+                    &times;
+                </button>
+                <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                    <a href="#home" class="w-full py-6 text-center hover:opacity-90">Home</a>
+                    <a href="#products" class="w-full py-6 text-center hover:opacity-90">Products</a>
+                    <a href="#message" class="w-full py-6 text-center hover:opacity-90">Message Us</a>
+                    <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a>
+                </nav>
+            </section>
+
+    </header>
+    <main class="relative w-full">
+        <section class="scroll-m-16" id="home">
+            <div class="mx-auto sm:max-w-5xl wideScreen:section-full-height tallScreen:section-full-height
+            min-h-[400px] flex justify-center items-center
+             ">
+                <div class="sm:border-b-2  border-cyan-500  flex md:flex-row sm:py-10 flex-col-reverse justify-center sm:gap-20 gap-14 sm:justify-around  items-center">
+                    <div class="text-center mx-5 max-w-sm">
+                        <h1 class="text-4xl sm:text-3xl text-slate-700 mb-5 capitalize">
+                        welcome to our shop
+                        </h1>
+                        <p class="text-slate-500 tallScreen:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae fuga neque vitae aliquid quos in quam quibusdam aut dolorum, sunt sint </p>
+                    </div>
+                    <!-- temp pic -->
+                    <div class="relative mx-5 max-w-2xl overflow-hidden rounded-lg">
+                        <div class="absolute top-0 bottom-0 left-0 right-0 md:bg-gradient-to-r bg-gradient-to-t z-10 from-white to-transparent"></div>
+                        <img src="./images/Image_-_Free_online_store_.jpeg.webp" alt="" class="">
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+        <section class=" scroll-m-16 mb-20" id="products">
+            <div class="mx-auto md:max-w-7xl
+            sm:max-w-4xl wideScreen:section-full-height tallScreen:section-full-height
+            min-h-[400px]
+            flex flex-col justify-center gap-14 sm:justify-start  items-center ">
+    
+                <h1 class="text-3xl text-slate-700 mt-5">
+                    Best Sellers
+                </h1>
+                <div class="grid  grid-cols-1 gap-y-6 md:grid-cols-2 xl:grid-cols-3 ">
+                    <div class="flex flex-col justify-center items-center  m-4 bg-white max-w-sm shadow-xl">
+                        <div class="rounded-lg overflow-hidden h-52 sm:h-56 bg-red-800 w-80 sm:w-96 mb-5 ">
+                            <img src="./images/PS5-Review-8-scaled.webp" alt="" class="max-w-sm object-cover object-top">
+                        
+                        </div>
+                        <p class="text-slate-500 mb-5">Play Station 5</p>
+                    </div>
+
+                    <hr class="md:hidden bg-cyan-500  h-[2px]">
+                    
+                    <div class="flex flex-col justify-center items-center  m-4 bg-white shadow-xl">
+                        <div class=" rounded-lg overflow-hidden h-52 sm:h-56 bg-red-800 w-80 sm:w-96 mb-5 ">
+                            <img src="./images/razer-kraken-x-review.webp" alt="" class=" object-cover">
+                            
+                        </div>
+                        <p class="text-slate-500 mb-5">Gaming Headset</p>
+                    </div>
+
+                    <hr class="md:hidden bg-cyan-500 h-[2px]">
+
+                    <div class="flex flex-col justify-center items-center m-4  bg-white max-w-sm shadow-xl">
+                        <div class=" h-52 sm:h-56 bg-red-800 w-80 sm:w-96 mb-5 rounded-lg  overflow-hidden">
+                            <img src="./images/c0d00e16-0ffc-4a7c-b20e-988430415878.__CR0,0,600,450_PT0_SX600_V1___.jpg" alt="" class="max-w-sm object-cover object-top">
+                        
+                        </div>
+                        <p class="text-slate-500 mb-5">Gaming keyboard</p>
+                    </div>
+
+                    <hr class="md:hidden bg-cyan-500  h-[2px]">
+
+                </div>
+            </div>
+        </section>
+        <section id="message" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
+                <h1 class="text-3xl text-center mb-10 text-slate-700 mt-5">
+                    Send Us A Message
+                </h1>
+                <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-xl sm:text-2xl">
+                    <label class="text-slate-600" for="full-name">Full Name:</label>
+                    <input type="text" id="full -name" name="full-name" required minlength="3" maxlength="60" placeholder="Your full name"
+                        class="w-full rounded-xl border border-solid border-slate-500 p-2 text-xl text-slate-900  sm:text-2xl" />
+                    <label class="text-slate-600" for="email">Email:</label>
+                    <input type="text" id="email" name="email" required minlength="3" maxlength="60" placeholder="example@gmail.com"
+                        class="w-full rounded-xl border border-solid border-slate-500 p-2 text-xl text-slate-900   sm:text-2xl" />
+                    <label class="text-slate-600" for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+                        class="w-full rounded-xl border border-solid border-slate-500 p-2 text-xl text-slate-900 sm:text-2xl"></textarea>
+                    <button
+                        class="w-48 rounded-xl border border-solid  bg-cyan-700 p-2 text-slate-100 hover:bg-cyan-600 
+                         active:bg-cyan-500">
+                        Submit
+                    </button>
+                </form>
+            </section>
+
+    </main>
+    <footer id="footer" class="bg-cyan-700 text-sm md:text-xl text-slate-200">
+            <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row justify-center items-center sm:justify-between">
+                <nav class="sm:flex-row flex-col justify-center items-center sm:gap-4  md:text-xl text-lg flex " aria-label="footer">
+                    <a href="#products" class="hover:opacity-90">Products</a>
+                    <a href="#message" class="hover:opacity-90">Message Us</a>
+                </nav>
+
+                <hr class="sm:hidden w-32 bg-slate-300 my-2 h-[2px]">
+
+                <div class="flex justify-center items-center flex-col sm:flex-row sm:gap-2">
+                    <p class="text-center">Copyright &copy; <span id="year">2023</span></p>
+                    <p class="text-center">All Rights Reserved</p>
+                </div>
+            </section>
+
+    </footer>
+</body>
+</html>
