@@ -2,6 +2,11 @@ const initApp = () => {
     const hamburgerBtn = document.getElementById('hamburger-button')
     const mobileMenu = document.getElementById('mobile-menu')
     const navbar = document.getElementById('navbar')
+    const year = document.getElementById('year')
+
+    const currentYear = new Date().getFullYear()
+
+    year.innerHTML = currentYear
 
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden')
